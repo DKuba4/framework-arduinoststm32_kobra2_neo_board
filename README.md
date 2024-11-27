@@ -1,3 +1,31 @@
+# Kobra 2 Neo Framework Compilation Guide
+
+## Installation Steps
+
+### 1. Firmware Framework Setup
+
+#### Copy Framework Directory
+1. Navigate to `C:\Users\%USERNAME%\.platformio\packages`
+2. Copy the `framework-arduinoststm32_kobra2_neo_board` directory to this location
+
+#### Cleanup
+- Remove the original `framework-arduinoststm32` directory
+- Rename `framework-arduinoststm32_kobra2_neo_board` to `framework-arduinoststm32`
+
+### 2. Board Configuration
+
+#### Copy Board Configuration
+1. Navigate to `C:\Users\%USERNAME%\.platformio\platforms\ststm32\boards`
+2. Copy the `ac_tri_f103re.json` file from `framework-arduinoststm32_kobra2_neo_board` to this directory
+
+## Sources
+- Firmware Source: [Vyper Repository](https://github.com/ANYCUBIC-3D/Vyper)
+- Detailed Instructions: [Vyper Wiki](https://github.com/ANYCUBIC-3D/Vyper/wiki)
+
+## Notes
+- The file was taken directly from the Vyper repo, it compiled succesfuly though I have not tried to install it on the printer yet.
+- Instructions are also modified from the Vyper repo wiki.
+
 # Arduino core support for STM32 based boards
 [![forums](https://img.shields.io/badge/join-the%20forums-blue.svg)](https://www.stm32duino.com/)
 [![wiki](https://img.shields.io/badge/browse-the%20wiki-orange.svg)](https://github.com/stm32duino/wiki/wiki)
